@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "vite": "^4.4.9"
+  }
+}

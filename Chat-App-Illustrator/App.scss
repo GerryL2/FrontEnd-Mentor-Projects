@@ -1,0 +1,378 @@
+$Pale-Violet: hsl(276, 100%, 81%);
+$Moderate-Violet: hsl(276, 55%, 52%);
+$Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+$Grayish-Blue: hsl(206, 6%, 79%);
+$Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+$Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Rubik', sans-serif;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+
+    .purple-background,
+    .gray-background {
+        position: absolute;
+    }
+
+    .purple-background {
+        background-image: linear-gradient( hsl(293, 100%, 63%) 2%, hsl(264, 100%, 61%));
+        width: 30rem;
+        height: 40rem;
+        z-index: -1;
+        top: 0;
+        left: -5%;
+        border-radius: 0 0 999vw 999vw;
+    }
+
+    .gray-background {
+        background-color: #F7F5FA;
+        width: 40rem;
+        height: 80rem;
+        right: -15%;
+        top: 15%;
+        z-index: -1;
+        border-radius: 999vw 999vw 0 0;
+    }
+
+    .phone-booking-container {
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        width: 55%;
+        margin-inline: auto;
+
+        img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: transform 2s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+        }
+
+        .phone--container {
+            border: 10px solid white;
+            border-radius: 2rem;
+            background-color: #f6f2f2;
+            margin-top: 8rem;
+            font-size: 9px;
+            box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+            width: 268px;
+            height: 506px;
+
+              
+              .fade-in {
+                animation: fadeIn 1.8s ease forwards;
+              }
+
+            .phone-header {
+                background-image: linear-gradient(220deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+                border-radius: 20px 20px 5px 5px;
+                display: flex;
+                justify-content: space-evenly;
+                height: 67px;
+                position: relative;
+
+                .phone-top-bar {
+                    position: absolute;
+                    background-color: white;
+                    height: 1rem;
+                    width: 8rem;
+                    border-radius: 0 0 10px 10px;
+                }
+
+                .phone-items {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1.3rem;
+
+                    .phone-avatar {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 3rem;
+                        gap: .7rem;
+    
+                        img {
+                            border-radius: 50%;
+                            border: 2px solid white;
+                            height: 26px;
+                            width: 26px;
+                        }
+    
+                        .avatar-heading {
+                            display: flex;
+                            flex-direction: column;
+    
+    
+                            h3 {
+                                color: white;
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+    
+                            p {
+                                color: $Pale-Violet;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+
+                    .dots, .arrow {
+                        width: 14px;
+                        height: 14px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .phone-messages {
+                padding: 10px;
+
+                .sam {
+                    color: $Moderate-Violet;
+                    background-color: hsl(277, 85%, 95%);
+                    border-radius: 10px 10px 10px 5px;
+                    padding: 5px;
+                    max-width: 65%;
+                    margin-bottom: 8px;
+                }
+    
+                .user {
+                    background-color: white;
+                    border-radius: 10px;
+                    max-width: 60%;
+                    margin-bottom: 8px;
+                    margin-inline-start: auto;
+                    padding: 5px;
+                    border-radius: 10px 10px 5px 10px;
+
+                }
+
+                .make {
+                    text-align: right;
+                    width: fit-content;
+                }
+    
+                .dogs {
+                    display: flex;
+                     gap: 10px;
+                     margin-inline-start: 5rem;
+                     margin-bottom: 10px;
+                     margin-top: 12px;
+    
+                    img {
+                        border-radius: 5px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                .walk {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    background-image: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+                    max-width: 70%;
+                    margin-bottom: 8px;
+                    padding: 6px;
+                    color: white;
+                    border-radius: 10px 10px 10px 5px;
+                    width: fit-content;
+
+
+                    .price {
+                        font-size: 12px;
+                        font-weight: 700;
+                        margin-left: 5px;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        .styled-radio {
+                            content: "";
+                            -webkit-appearance: none;
+                            border: 1px dashed white;;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                        }
+
+                        .styled-radio:checked {
+                            background-color: white;
+                        }
+
+                    }
+
+                }
+
+                .send-message {
+                    position: relative;
+
+                    input[type=text] {
+                        border-radius: 999vw;
+                        border: none;
+                        padding: .7rem;
+                        outline: none;
+                        width: 100%;
+                        margin-top: .5rem;
+                    }
+
+                    .submit-button {
+                        position: absolute;
+                        top: 34%;
+                        right: 5%;
+                        cursor: pointer;
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    .submit-button:hover {
+                        transform: scale(1.1);
+                      }
+
+
+                }
+
+
+            }
+
+        }
+
+        .booking {
+            width:55%;
+            h1 {
+                margin-top: 7rem;
+                font-size: 2.4rem;
+                color: $Very-Dark-Desaturated-Violet;
+                margin-bottom: 1rem;
+                font-weight: 500;
+            }
+
+            p {
+                color: $Dark-Grayish-Violet;
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+
+}
+
+@media screen and (max-width: 844px) {
+
+
+    .wrapper {
+        .purple-background,
+        .gray-background {
+            width: 20rem;
+            height: 30rem;
+            
+        }
+
+        .purple-background {
+            left: -8rem;
+        }
+
+        .gray-background {
+            right: -9rem;
+            top: 30rem;
+        }
+
+        .phone-booking-container {
+            flex-direction: column;
+            width: 100%;
+    
+            .phone--container {
+                margin-top: rem !important;
+                margin-inline: auto;
+            }
+    
+    
+            .booking {
+                width: 100%;
+                text-align: center;
+                width: 90%;
+
+                h1 {
+                    margin-top: 1rem !important;
+                }
+            }
+        }
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 1350px) {
+    .gray-background {
+        bottom: 0 !important;
+    }
+
+    .phone-booking-container {
+        width: 100%;
+        flex-direction: column;
+
+        .phone--container {
+            margin-top: 2rem !important;
+
+
+        }
+
+        .booking {
+            h1 {
+                margin-top: 0 !important;
+            }
+        }
+    }
+}

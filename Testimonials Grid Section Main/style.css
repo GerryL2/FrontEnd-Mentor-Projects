@@ -1,0 +1,171 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grey: hsl(217, 19%, 35%);
+    --Very-dark: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--Light-gray);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 2rem;
+}
+
+.container h1 {
+    font-size: 13px;
+}
+
+img {
+    border: 1px solid var(--Light-gray);
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+}
+
+.person {
+    margin-left: 1rem;
+}
+
+.person h1 {
+    margin-bottom: -.7rem;
+}
+
+.names {
+    color: var(--White);
+}
+
+
+.daniel,
+.patrick {
+    width: 35rem;
+}
+
+.white {
+    color: var(--White);
+}
+
+.reason {
+    font-size: 1.4rem;
+}
+
+.review {
+    color: var(--Light-gray);
+}
+
+.graduate {
+    color: var(--Light-gray);
+}
+
+.daniel {
+    grid-column: 1 / 3;
+    background-color: var(--Moderate-violet);
+    padding: 1rem;
+    border-radius: 10px;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+}
+
+.daniel img {
+    border: 2px solid  hsl(263, 78%, 72%);
+}
+
+.patrick {
+    grid-column: 2 / 4;
+    background-color: var(--Very-dark);
+    color: var(--Light-gray);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.patrick img {
+    border: 2px solid var(--Moderate-violet);
+}
+
+.jonathan {
+    background-color: var(--Very-dark-grey);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.jeanette {
+    background-color: var(--White);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.jonathan,
+.jeanette {
+    width: 17rem;
+}
+
+.kira {
+    grid-column: 4 / 5;
+    grid-row: 1 / span 2;
+    width: 20rem;
+    padding: 1rem 2rem;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.kira .reason {
+    font-size: 1.6rem;
+    color: var(--Very-dark-grey);
+}
+
+
+.kira .review {
+    display: flex;
+    font-size: 15px;
+}
+
+.review {
+    font-size: 15px;
+}
+
+.kira .names {
+    color: black;
+}
+
+.jeanette .names {
+    color: black;
+}
+
+@media screen and (max-width: 844px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .daniel,
+    .patrick,
+    .jeanette,
+    .jonathan,
+    .kira {
+        width: 20rem;
+    }
+}

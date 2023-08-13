@@ -1,0 +1,248 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Epilogue", sans-serif;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+header button {
+  border: none;
+  color: hsl(0, 0%, 41%);
+  background-color: white;
+}
+header svg,
+header .dropdown-content p,
+header .dropdown-content p {
+  cursor: pointer;
+}
+header button:hover {
+  color: black;
+}
+header .dropdown-buttons {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+header .dropdown-buttons .dropdowns {
+  display: flex;
+  flex-direction: column;
+}
+header .dropdown-buttons .dropdowns button {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+header .dropdown-buttons .dropdowns .dropdown-content {
+  position: absolute;
+  top: 4rem;
+  padding: 1rem;
+  background-color: white;
+}
+header .dropdown-buttons .dropdowns .dropdown-content p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header .dropdown-buttons .features-dropdown .dropdown-content {
+  left: 8rem;
+}
+header .register-btn {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 15px;
+  padding: 0.7rem 1rem;
+  margin-left: 2rem;
+}
+header .register-btn:hover {
+  border: 2px solid black;
+}
+
+/* Main container */
+.wrapper {
+  display: grid;
+  grid-auto-columns: 0.7fr;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+.wrapper .wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 13rem;
+}
+.wrapper .wrapper-text h1 {
+  font-size: 6rem;
+  width: 72%;
+  line-height: 6rem;
+}
+.wrapper .wrapper-text h1 span {
+  display: block;
+}
+.wrapper .wrapper-text p {
+  color: hsl(0, 0%, 41%);
+  font-size: 1.2rem;
+  width: 55%;
+}
+.wrapper .wrapper-text button {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  align-self: flex-start;
+  border: none;
+  margin-bottom: 9rem;
+}
+.wrapper .wrapper-text .icons {
+  display: flex;
+  gap: 3rem;
+}
+.wrapper .wrapper-image {
+  padding: 2rem 1rem 5rem 1rem;
+}
+
+@media screen and (max-width: 844px) {
+  .hamburger-btn {
+    display: block;
+    cursor: pointer;
+  }
+  header {
+    padding: 2rem 1rem;
+  }
+  .dropdown-buttons .dropdowns {
+    display: none !important;
+  }
+  .dropdown-buttons .careers,
+  .dropdown-buttons .about {
+    display: none;
+  }
+  .header-buttons {
+    display: none !important;
+  }
+}
+/* Sidenav */
+@media screen and (max-width: 844px) {
+  .sidenav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    color: hsl(0, 0%, 41%);
+  }
+  .sidenav .close-btn {
+    scale: 0.7;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+  .sidenav .sidenav-dropdown-buttons {
+    margin-top: 5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sidenav .sidenav-dropdown-buttons button {
+    margin-bottom: 1rem;
+  }
+  .sidenav .sidenav-dropdown-buttons .sidenav-dropdowns button {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .sidenav .sidenav-dropdown-buttons .sidenav-dropdown-content p {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sidenav .sidenav-header-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sidenav .sidenav-careers {
+    display: block;
+  }
+}
+/* Wrapper content */
+@media screen and (max-width: 844px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+  }
+  .wrapper .wrapper-text {
+    margin-top: 4rem;
+    text-align: center;
+    align-items: center;
+  }
+  .wrapper .wrapper-text h1 {
+    font-size: 2.4rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .wrapper .wrapper-text p {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .wrapper .wrapper-text button {
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+  .wrapper .wrapper-text .icons {
+    gap: 1.6rem;
+  }
+  .wrapper .wrapper-image {
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

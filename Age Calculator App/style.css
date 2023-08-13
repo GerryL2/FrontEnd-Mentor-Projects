@@ -1,0 +1,166 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light: red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--Light-grey)
+}
+
+.calculator-container {
+    background-color: var(--White);
+    padding: 3rem 4rem 1rem 4rem;
+    border-bottom-right-radius: 10rem !important;
+    border-radius: 2rem;
+}
+
+.dates.error .error-text {
+    color: red;
+    font-style: italic;
+    font-size: 0.874rem;
+    display: block;
+}
+
+.dates.error .error-label {
+    color: red;
+    display: block;
+}
+
+.dates.error #error-input {
+    border: 1px solid red;
+    display: block;
+}
+
+.error-input {
+    display: hidden;
+}
+
+.error-text {
+    display: none;
+}
+
+.error-label {
+    display: none;
+}
+
+.inputs {
+    padding-right: 3rem;
+}
+
+.inputs div {
+    display: inline-block;
+
+}
+
+.inputs label {
+    display: block;
+    color: var(--Smokey-grey);
+    font-size: 0.874rem;
+}
+
+.dates {
+    margin-right: -15rem;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--White);
+}
+
+input {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grey);
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 2rem;
+    
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line hr {
+    width: 100%;
+}
+
+
+.ymd p {
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1rem;
+    margin-top: 2rem;
+}
+
+.ymd span {
+    color: var(--Purple);
+}
+
+img {
+    background-color: var(--Purple);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    color: black;
+    font-size: .729rem;
+}
+
+.attribution a {
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 844px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+
+    .calculator-container {
+        transform: scale(0.7);
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .ymd {
+        margin-top: 5rem;
+        width: max-content;
+    }
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="inputs">
+      <div class="dates">
+        <label for="day" class="error-label">DAY</label>
+        <input type="number" placeholder="DD" class="day inputs" id="error-input">
+        <p class="error-text">Must be a valid day</p>
+      </div>
+      <div class="dates">
+        <label for="month" class="error-label">MONTH</label>
+        <input type="number" placeholder="MM" class="month inputs" id="error-input">
+        <p class="error-text">Must be a valid month</p>
+      </div>
+      <div class="dates">
+        <label for="year" class="error-label">YEAR</label>
+        <input type="number" placeholder="YYYY" class="year inputs" id="error-input">
+        <p class="error-text">Must be in the past</p>
+      </div>
+    </div>
+    <div class="line">
+      <hr>
+      <button id="submit"><img src="images/icon-arrow.svg" alt="Arrow Icon"></button>
+    </div>
+    <div class="ymd">
+      <p><span class="yearDate">--</span> years</p>
+      <p><span class="monthDate">--</span> months</p>
+      <p><span class="dayDate">--</span> days</p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Gerry Lauriant</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

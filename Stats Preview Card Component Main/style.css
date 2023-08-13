@@ -1,0 +1,118 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 550px;
+  margin-top: 10rem;
+  background-color: hsl(277, 62%, 25%);
+  border-radius: 10px;
+}
+
+.stats-text {
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: hsl(244, 38%, 16%);
+  gap: 1rem;
+}
+.stats-text h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.2rem;
+}
+.stats-text h1 span {
+  color: hsl(277, 64%, 61%);
+}
+.stats-text h1 + p:nth-of-type(1) {
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-bottom: 2rem;
+}
+.stats-text .stats {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+.stats-text .stats p {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+.stats-text .stats p span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.stats-image {
+  opacity: 0.3;
+}
+.stats-image img {
+  width: 35rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 844px) {
+  .wrapper {
+    width: 90%;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .stats-text {
+    grid-column: 1/2;
+    grid-row: 2;
+    border-radius: 0 0 10px 10px;
+    padding: 3rem 2rem;
+  }
+  .stats-text .stats {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 0;
+  }
+  .stats-image {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  .stats-image img {
+    border-radius: 10px 10px 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */

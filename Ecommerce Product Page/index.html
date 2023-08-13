@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <main class="container">
+    <div class="ease"></div>
+    <header>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="hamburger-sidebar">
+        <div class="sidenav">
+          <svg class="close-btn" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+          <a href="">Collections</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+      </div>
+      <div class="header-items">
+        <img class="logo" src="images/logo.svg" alt="">
+        <nav class="navbox">
+          <ul>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-image">
+        <button class="first-cart-button">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+        </button>
+        <div class="amount-of-shoes"><p></p></div>
+        <img class="avatar" src="images/image-avatar.png" alt="Page Avatar Image">
+      </div>
+    </header>
+    <hr class="desktop-hr">
+    <div class="content">
+      <div class="cart">
+        <p class="cart-title">Cart</p>
+        <hr>
+        <p class="empty">Your cart is empty.</p>
+        <div class="cart-items">
+          <div class="cart-stuff">
+            <img class="cart-image cart-shoe" src="images/image-product-1-thumbnail.jpg" alt="">
+            <div class="cart-desc">
+              <p>Fall Limited Edition Sneakers</p>
+              <p>$125.00 x <span class="shoes-cart-amount"></span><span class="total"></span></p>
+              
+            </div>
+            <svg class="delete" width="14" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill="#C3CAD9" fill-rule="nonzero" xlink:href="#a"/></svg>
+          </div>
+          <div class="checkout">
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
+      </div>
+      <section class="shoe-section">
+        <div class="current-shoe">
+          
+          <div class="shoe-slide">
+            <img class="lastClone" src="images/image-product-4.jpg" alt="" class="thumbnail">
+            <img src="images/image-product-1.jpg" alt="" class="thumbnail">
+            <img src="images/image-product-2.jpg" alt="" class="thumbnail">
+            <img src="images/image-product-3.jpg" alt="" class="thumbnail">
+            <img src="images/image-product-4.jpg" alt="" class="thumbnail">
+            <img class="firstClone" src="images/image-product-1.jpg" alt="" class="thumbnail">
+          </div>
+          <button id="prev-btn">&#10094;</button>
+          <button id="next-btn">&#10095;</button>
+        </div>
+        <div class="shoe-options">
+          <div class="shoe-selection">
+            <img src="images/image-product-1.jpg" alt="">
+          </div>
+          <div class="shoe-product">
+            <div class="shoe-one">
+              <img class="shoe-choices shoes" src="images/image-product-1-thumbnail.jpg" alt="" tabindex="0">
+            </div>
+            <div class="shoe-two">
+              <img class="shoe-choices shoes" src="images/image-product-2-thumbnail.jpg" alt="" tabindex="0">
+            </div>
+            <div class="shoe-three">
+              <img class="shoe-choices shoes" src="images/image-product-3-thumbnail.jpg" alt="" tabindex="0">
+            </div>
+            <div class="shoe-four">
+              <img class="shoe-choices shoes" src="images/image-product-4-thumbnail.jpg" alt="" tabindex="0">
+            </div>
+          </div>
+        </div>
+        <div class="light-box-container">
+          <div class="lightbox">
+            <img src="images/image-product-1.jpg" alt="Image" id="lightbox-img">
+            <span class="close-button"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></span>
+            <span class="previous-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></span>
+            <span class="forward-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></span>
+            <div class="second-gallery">
+                <img src="images/image-product-1.jpg" alt="Thumbnail 1" class="thumbnailTwo">
+                <img src="images/image-product-2.jpg" alt="Thumbnail 2" class="thumbnailTwo">
+                <img src="images/image-product-3.jpg" alt="Thumbnail 3" class="thumbnailTwo">
+                <img src="images/image-product-4.jpg" alt="Thumbnail 4" class="thumbnailTwo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shoe-text">
+        <h2 class="shoe-company">Sneaker Company</h2>
+        <h1 class="shoe-title">Fall Limited Edition Sneakers</h1>
+        <p class="shoe-description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div class="shoe-price">
+          <div class="discount-price">
+            <p class="price-discount">$125.00</p>
+            <p class="discount">50%</p>
+          </div>
+          <div  class="previous-price">
+            <p>$250.00</p>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="increment">
+            <button class="minus-button"><svg width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg></button>
+            <p class="shoes-amount">0</p>
+            <button class="plus-button"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg></button>
+          </div>
+          <div class="add-cart">
+            <button><svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/></svg>Add to cart</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

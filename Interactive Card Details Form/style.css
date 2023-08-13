@@ -1,0 +1,288 @@
+:root {
+    --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%)
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* CARD CONTAINER */
+
+ .card-container {
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100%;
+    color: white;
+}
+
+
+
+
+
+
+/* INPUT CONTAINER */
+
+
+.right-side {
+    width: 70%;
+    margin: auto;
+}
+
+.right-side button {
+    width: 100%;
+    background-color: var(--Very-dark-violet);
+    color: white;
+    padding: .7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right-side input {
+    width: 100%;
+    padding: .7rem;
+    border-radius: 10px;
+    border: 1px solid var(--Dark-grayish-violet);
+    margin-bottom: 1rem;
+}
+
+.right-side input:focus {
+    border: 1px solid rgb(135, 84, 135);
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+}
+
+.card-form label {
+    display: block;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-exp-cvc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.7rem;
+}
+
+.card-exp-date {
+     width: 38%;
+}
+
+
+.card-exp-date input {
+    width: 45%;
+}
+
+
+.input-body.error input {
+    border: 1px solid var(--Red);
+}
+
+.input-body.error .text-error {
+    color: var(--Red);
+    font-size: .8rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.text-error {
+    display: none;
+}
+
+.input-error {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#hidden {
+    display: none;
+}
+
+/* THANK YOU */
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+}
+
+.thank-you img {
+    width: 140px;
+    margin-bottom: 2rem;
+}
+
+.thank-you h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+}
+
+.thank-you p {
+    margin-bottom: 2.4rem;
+    color: var(--Dark-grayish-violet);
+}
+
+
+
+@media screen and (max-width: 844px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right-side,
+    .card-form {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .card-container {
+        min-height: 300px;
+    }
+
+    .front-card-img,
+    .back-card-img {
+        width: 20rem;
+    }
+
+    .front-card {
+        position: absolute;
+        margin-top: 6.2rem;
+        margin-left: 2rem;
+    }
+
+    .front-card .card-items {
+        position: relative;
+        margin-top: -10rem;
+        margin-left: 1rem;
+    }
+
+    .card-items .card-logo {
+        margin-bottom: 2rem;
+    }
+
+    .exp-date {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1rem;
+        margin-top: .7rem;
+    }
+
+    .card-number {
+        font-size: 1.5rem; 
+    }
+
+
+    .back-card {
+        margin-top: 4rem;
+        margin-left: 6rem;
+    }
+
+    .back-card p {
+        position: absolute;
+        top: 8.7rem;
+        left: 22rem;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .front-card {
+        position: absolute;
+        left: 7rem;
+        top: 10rem;
+    }
+    
+    .front-card .card-items {
+        position: relative;
+        bottom: 14rem;
+        left: 1rem;
+    }
+
+    .card-items .card-number {
+        margin-top: 4.4rem;
+        font-size: 1.9rem;
+        letter-spacing: 2px;
+    }
+
+    .card-items .exp-date {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 3rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .back-card {
+        position: relative;
+        left: 14rem;
+        top: 28rem;
+    }
+
+    .back-card p {
+        position: inherit;
+        bottom: 8.5rem;
+        left: 22rem;
+        letter-spacing: 1px;
+    }
+}

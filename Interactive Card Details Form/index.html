@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main class="container">
+    <div class="card-container">
+      <div class="cards">
+        <div class="front-card">
+          <img class="front-card-img" src="images/bg-card-front.png" alt="Front of a credit card">
+          <div class="card-items">
+            <img class="card-logo" src="images/card-logo.svg" alt="Card logo">
+            <p class="card-number">0000 0000 0000 0000</p>
+            <div class="exp-date">
+              <p class="card-name">Jane Appleseed</p>
+              <p><span class="card-month">00</span>/<span class="card-year">00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="back-card">
+          <img class="back-card-img" src="images/bg-card-back.png" alt="Back of a credit card">
+          <p class="card-cvc">000</p>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="card-form">
+        <div class="card-holder-name input-body">
+          <label for="Cardholder-name">Cardholder Name</label>
+          <input type="text" oninput="cardInput()" name="Cardholder-name" class="cardholder-name" placeholder="e.g. Jane Appleseed" required>
+          <p class="text-error">Can't be blank</p>
+        </div>
+        <div class="card-number input-body">
+          <label for="input-card-number">Card Number</label>
+          <input type="text" oninput="cardInput()" maxlength="19" name="input-card-number" class="input-card-number" placeholder=".e.g. 1234 5678 9123 0000" required>
+          <p class="text-error">Wrong format, numbers only</p>
+        </div>
+        <div class="card-exp-cvc">
+          <div class="card-exp-date input-body">
+            <label for="card-exp">Exp. Date (MM/YY)</label>
+            <input type="tel" oninput="cardInput()" maxlength="2" minlength="2" class="card-exp-month" placeholder="MM" required>
+            <input type="tel" oninput="cardInput()" maxlength="2" minlength="2" class="card-exp-year" placeholder="YY" required>
+            <p class="text-error">Can't be blank</p>
+          </div>
+          <div class="card-input-cvc input-body">
+            <label for="cvc">CVC</label>
+            <input type="number" name="cvc" oninput="cardInput()" class="card-cvc-input" maxlength="3" minlength="3" placeholder="e.g. 123" required>
+            <p class="text-error">Can't be blank</p>
+          </div>
+        </div>
+        <button class="confirm-btn">Confirm</button>
+      </div>
+      <div class="thank-you" id="hidden">
+        <img src="images/icon-complete.svg" alt="Complete icon">
+        <h1>Thank you!</h1>
+        <p>We've added your card details</p>
+        <button type="submit" class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+  </main>
+  <script src="index.js"></script> 
+</body>
+</html>

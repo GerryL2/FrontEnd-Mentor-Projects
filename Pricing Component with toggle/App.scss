@@ -1,0 +1,30 @@
+input[type=checkbox] {
+    -webkit-appearance: none;
+    width: 3rem;
+    border-radius: 99vw;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+}
+
+input[type=checkbox]::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 13%;
+    left: 5%;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    transition: .5s;
+
+}
+
+
+
+input[type=checkbox]:checked::after {
+    left: 54%;
+    transition: .5s;
+}

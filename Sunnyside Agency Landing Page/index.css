@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.FirstLearnMore {
+    text-decoration-color: rgba(250, 212, 0, 0.2);
+    text-underline-offset: 1px;
+    text-decoration-thickness: 10px;
+    text-decoration-line: underline;
+}
+
+.SecondLearnMore {
+    text-decoration-color: rgba(254, 120, 103, 0.2);
+    text-underline-offset: 1px;
+    text-decoration-thickness: 10px;
+    text-decoration-line: underline;
+}
+
+.iconhover:hover {
+    fill: white;
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "hamburger-react": "^2.5.0",
+    "react-icons": "^4.10.1"
+  }
+}

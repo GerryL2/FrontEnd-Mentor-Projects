@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "expo-linear-gradient": "~12.3.0",
+    "react-countdown": "^2.3.5",
+    "react-icons": "^4.10.1"
+  }
+}

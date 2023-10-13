@@ -1,0 +1,185 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+.bdy {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: 1600px;
+
+}
+
+header img {
+    padding-inline: 5rem;
+    padding-block: 3rem;
+}
+
+.container {
+    display: flex;
+    padding-inline: 5rem;
+    gap: 5rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.container .container__img {
+    flex: 2;
+}
+
+.container__text {
+    color: white;
+    flex: 1 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-top: 2rem;
+}
+
+.container__text h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    max-width: 80%;
+}
+
+.container__text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    max-width: 85%;
+}
+
+
+.container__text button {
+    border-radius: 100vw;
+    padding-inline: 1rem;
+    border: none;
+    cursor: pointer;
+    align-self: self-start;
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 4rem;
+    padding-block: 1rem;
+    font-size: 1.3rem;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 2px 2px 5px 2px hsl(257, 23%, 30%);
+}
+
+button:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    float: right;
+    margin-right: 3rem;
+    
+}
+
+footer .icon-border {
+    cursor: pointer;
+
+}
+
+footer i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 1em 1em;
+    
+}
+
+.fa-brands {
+    color: white;
+}
+
+.fa-brands:hover {
+    color: #e882e8;
+}
+
+footer i:hover {
+ color: hsl(300, 69%, 71%);
+ border: 2px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 715px) {
+    .bdy {
+        background-image: url(./images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-size: 700px;
+        background-repeat: no-repeat;
+    }
+
+    header img {
+        padding-inline: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding-inline: 3rem;
+    }
+
+    .container__img {
+        flex: 2;
+    }
+
+    .container__text {
+        text-align: center;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .container__text button {
+        align-self: auto;
+        padding-inline: 8rem;
+    }
+
+    .container__text h1 {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    .container__text p {
+        font-size: 1.49rem;
+        max-width: 100%;
+    }
+
+
+    footer {
+        float: none;
+        margin-top: 5rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    
+}

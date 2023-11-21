@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(212, 45%, 89%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 800px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+    border-radius: 15px;
+    background-color: white;
+    max-width: 300px;  
+    text-align: center;
+    padding: .8rem;
+    box-shadow: 10px 10px 36px -17px rgba(0,0,0,0.47);
+}
+
+.container img {
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(218, 44%, 22%);
+    margin: 1rem 0;
+    padding-inline: 1.2rem;
+}
+
+p {
+    color: hsl(220, 15%, 55%);
+    margin: 1rem 0;
+}
+

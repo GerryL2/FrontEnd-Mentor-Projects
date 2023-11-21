@@ -1,0 +1,144 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    max-width: 300px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 10px 10px 36px -17px rgba(0,0,0,0.47);
+}
+
+.Eicon {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Eicon:hover + .container__overlay {
+    visibility: visible;
+}
+
+.container__icon {
+    position: relative;
+}
+
+.container__overlay {
+    background-color: rgba(0,255,247, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+h1 {
+    color: white;
+    font-size: 18px;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.container__description {
+    color: hsl(215, 51%, 70%);
+}
+
+.container__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__price > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.container__price > div:nth-of-type(1) {
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+
+.container__price >div:nth-of-type(2) {
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    margin-block: 10px;
+}
+
+.container__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 15px;
+}
+
+.container__user img {
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.container__user span:nth-of-type(1) {
+    color: hsl(215, 51%, 70%);
+}
+
+.container__user span:nth-of-type(2) {
+    color: white;
+    cursor: pointer;
+}
+
+.container__user span:nth-of-type(2):hover {
+    color: hsl(178, 100%, 50%);
+}

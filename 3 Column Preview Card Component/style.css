@@ -1,0 +1,146 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: white;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+section {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem 4.7rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2rem;
+}
+
+header {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+
+}
+
+
+button, img {
+    align-self: baseline;
+}
+
+.container__sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.container__suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.container__luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0px;
+}
+
+.sedans__btn {
+    color: hsl(31, 77%, 52%);
+    border: none;
+    padding: .8rem 2rem;
+    border-radius: 99vw;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 4rem;
+}
+
+.suv__btn {
+    color: hsl(184, 100%, 22%);
+    border: none;
+    padding: .8rem 2rem;
+    border-radius: 99vw;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 4rem;
+}
+
+.luxury__btn {
+    color: hsl(179, 100%, 13%);
+    border: none;
+    padding: .8rem 2rem;
+    border-radius: 99vw;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 4rem;
+}
+
+.sedans__btn:hover, .suv__btn:hover, .luxury__btn:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+@media screen and (max-width: 1120px) {
+    .container {
+        margin-block: 2rem;
+    }
+
+    section {
+        padding: 3rem 4rem;
+    }
+
+    .sedans__btn, .suv__btn, .luxury__btn {
+        margin-top: 0rem;
+    }
+
+    .container__sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .container__suvs {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .container__luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0px 10px 10px;
+    }
+}
+

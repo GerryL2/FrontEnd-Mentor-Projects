@@ -1,0 +1,155 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  background-position: top;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  background-color: white;
+  max-width: 451px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 10px 10px 37px -17px rgba(0, 0, 0, 0.41);
+  position: relative;
+  top: 50%;
+  transform: translateY(20%);
+}
+
+.container__hero {
+  border-radius: 15px 15px 0 0 ;
+}
+
+.container__content {
+  padding-inline: 3rem;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.container__description {
+  color: hsl(224, 23%, 55%);
+}
+
+.container__choice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.container__items {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.container__annual {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.container__year {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.container__change {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+  font-size: .9rem;
+
+}
+
+.container__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container__payment {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: bold;
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 5px 20px 25px -10px rgba(56,41,224, 0.41);
+}
+
+.container__payment:hover {
+  opacity: .5;
+}
+
+.container__cancel {
+  background-color: transparent;
+  padding: 14px;
+  border: none;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+
+.container__cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .container {
+    margin-inline: 1rem;
+  }
+  .container__content {
+    padding-inline: 1rem;
+  }
+}

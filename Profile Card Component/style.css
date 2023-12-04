@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: -30% 300%, 120% -250%;
+  background-size: 60%, 60%;
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  max-width: 350px;
+  background-color: white;
+  position: relative;
+}
+
+.container__pattern {
+  border-radius: 10px 10px 0 0;
+}
+
+.container__picture {
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  border: 5px solid white;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+
+}
+
+h1 {
+  color: hsl(229, 23%, 23%);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h3 {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+span {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+.container__text {
+ text-align: center;
+ width: 100%;
+
+}
+
+hr {
+  border-color: hsl(0, 0%, 100%);
+}
+
+.container__info {
+  padding: 5rem 0 2rem 0;
+}
+
+.container__stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 1.5rem;
+}
+
+h2 {
+  color: hsl(229, 23%, 23%);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.container__stats p {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: -23rem -15rem, 14rem 190%;
+    background-size: 130%, 130%;
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+  }
+}

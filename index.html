@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <script src="index.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/c9eee2280c.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <main class="container">
+    <div class="title-switch">
+      <h1>TODO</h1>
+      <label class="switch">
+          <input type="checkbox" id="checkbox-switch">
+          <i class="fa-regular fa-sun fa-xl" id="switch-icon" style="color: #ffffff;"></i>
+      </label>
+    </div>
+    <div class="addTodo">
+      <label class="inputSwitch">
+        <input type="checkbox" id="input-checkbox"  onclick="check(this)">
+      </label>
+      <input type="text" class="todoInput"  placeholder="Create a new todo...">
+    </div>
+    <div class="toDoItems">
+      <input type="checkbox" id="input-checkbox" onclick="check(this)">
+    </div>
+    <div class="toDoExtras">
+      <p><span id="toDoLeft"></span> items left</p>
+      <div class="toDoActives">
+        <button class="all-btn extraBtn">All</button>
+        <button class="active-btn extraBtn">Active</button>
+        <button class="completed-btn extraBtn">Completed</button>
+      </div>
+      <button id="clear-btn" class="extraBtn">Clear Completed</button>
+    </div>
+  </main>
+</body>
+</html>
